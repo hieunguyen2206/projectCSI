@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <!--A grid is a layout that has rows and columns-->
+  <head>
+    <title> Grid Practice </title>
+  </head>
+  <body style = "padding-bottom: 400px;">
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 100px 200px;
+      ">
+      <!--The first column is going to have a width of 100px
+      the second column is going to have a width of 100px as well-->
+
+
+      <div style="background-color: lightblue;">100px<p>Text</p></div>
+      <!--This code here is another way of writing CSS called INLINE STYLES
+      In real website we put the style in a separate file -->
+      <!--When we put the <div> inside the grid, it's no longer taking up the entire line, it only takes up the entire column instead -->
+      <!--The second thing is there's no extra space between these two UNLIKE the display inline-block -->
+      <!--The third thing, when we put a paragraph inside <div> it'll vertically align-->
+      <div style="background-color: lightpink;">100px</div>
+      <div style="background-color: lightpink;">200px</div>
+      <div style="background-color: lightpink;">200px</div> <!--If you put the number of <div> greater than what you declare the columns -> it will create a new row -->
+
+      
+    </div>
+
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 100px;
+      margin-top: 10px;
+      ">
+      <div style="background-color: lightblue;">div1 2 <p>Text</p></div>
+      <div style="background-color: lightpink;">div2</div>
+    </div>
+
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 1fr; /* fr is a spacial value in grid that stands for free space - the second column will take up the remaining amount of space*/
+      margin-top: 10px;
+      ">
+      <div style="background-color: lightblue;">div1</div>
+      <div style="background-color: lightpink;">1fr</div>
+    </div>
+
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 1fr 2fr; /* if we put the third columns 2fr which means it will be twice as wide as the second column */
+      margin-top: 10px;
+      ">
+      <div style="background-color: lightblue;">div1</div>
+      <div style="background-color: lightpink;">1fr</div>
+      <div style="background-color: lightblue;">2fr</div>
+    </div>
+
+    <div style="
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* if we put the third columns 2fr which means it will be twice as wide as the second column */
+    margin-top: 10px; /* this space is for outside this grid */
+    column-gap: 10px; /* this is for inside this grid */
+    row-gap: 10px;
+
+    ">
+    <div style="background-color: lightblue;height: 200px;">1fr</div>
+    <div style="background-color: lightpink;height: 200px;">1fr</div>
+    <div style="background-color: lightblue;height: 200px;">1fr</div>
+    <div style="background-color: lightblue;height: 200px;">1fr</div>
+    <div style="background-color: lightpink;height: 200px;">1fr</div>
+    <div style="background-color: lightblue;height: 200px;">1fr</div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position Practice </title>
+  </head>
+
+  <body style="height: 3000px; padding-top: 60px; padding-left: 80px;">
+    <div style = "
+      position: fixed;
+      background-color: black;
+      color: white;
+      top: 0; /*There is no space between header and the top side*/
+      left: 0;/* we can set all 4 directions*/
+      right: 0;
+      z-index: 2;
+      height: 50px; /* In this case, we should use height because we don't have to calculate the size
+      and the bottom will resize when we shrink it - if you want it to resize with the page*/"
+      >Header</div>
+      
+    <div style = "
+      position: absolute;
+      background-color: red;
+      color: white;
+      right: 100px;">
+      absolute </div>
+      <!-- Z-index is a property to set the layyer - by default the element will have Z-index: 0 -->
+      <!--So mostly these properties work the same way as position fixed
+      - But one key difference - for position fixed the elements placed in the browser window
+        which doesn't  move when we scroll and postition absolute positions  - Absolute = placed on the page-->
+    
+    
+    <div style = "
+      background-color: lightblue;
+      height: 200px;
+      width:200px;
+      position: static; /*Position static is default position*/
+      /*margin-top will not work if you change the position of elements*/">
+      div1
+    </div>
+    <div style = "
+      background-color: lightpink;
+      height: 200px;
+      width:200px;
+      position: relative;
+      /*when we put the absolute position element in the relative postion -> it will stick on that element
+      not on the page*/ ">
+      div2
+      <div style = "
+      position: absolute;
+      background-color:black;
+      color: white;
+      top:170px;
+      right:10px;">
+      5:00</div>
+    </div>
+    <!--position: fixed, absolute, relative, static(default)-->
+    <div style = "
+      position:fixed;
+      left: 0;
+      top:50px;
+      bottom: 0;
+      background-color: green;
+      color: white;
+      width: 75px;">
+      Sidebar
+      <div style = "
+      position: absolute;
+      background-color: red;
+      color: white;
+      top:0;
+      right:0;">
+      a </div>
+      <!-- When we put the absolute property in fixed property - the left,right,top, bottom mean 
+      pixels from the top of the postitions, fixed element -->
+    </div>
+  </body>
+</html>

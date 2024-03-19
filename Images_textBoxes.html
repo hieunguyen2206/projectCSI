@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Youtube.com</title>
+    <style>
+      .thumbnail{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        /* You only need to set width and don't have to do anything more
+        /* If you only change width the height will also change to make suitable for dimension*/
+        /*height: 300px;*/
+        /*object-fit: cover;*/
+        /* This determines what happens if this size doesn't match the images dimension or the images shape*/
+        /* This tells the image to cover this 300 by 300 area,
+        it's also going to keep its shape, this area might not be big enough to show the whole
+        image */
+        /*
+        object-fit: contain;
+        this will contain the entire image in the shrink shape 
+        object-position: bottom;
+        border-width: 2px;
+        border-style: solid;
+        */
+      }
+      .search-bar{
+        font-size: 20px;
+        margin-left: 12px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <img class = "thumbnail" src = "thumbnails/thumbnail-1.webp">
+    <input class = "search-bar" type = "text" placeholder = "Search">
+  </body>
+</html>

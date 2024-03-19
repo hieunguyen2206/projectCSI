@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- Flexbox is another way to create these horizontal layouts while maintaining -->
+<!-- The layout  is more rigid (for GRID) - we have to put the number of columns first 
+and then put the size you want, so whenever you want to change the position of the element
+, the size don't change-->
+<!-- So the elements take their width along with them if they move around -> so we have flexible layout-->
+
+<!-- Grid = rigid layout
+    flexbox = flexible layout
+    This is the biggest diference of these layout  -->
+
+<!-- In Youtube, when you log in, the right side will have 4 elements but 
+if you log out there are three elements, so this is a great situation to understand
+which layout you have to use-->
+<html>
+  <head>
+    <title>Flexbox Practice</title>
+  </head>
+
+  <body style = "margin: 0;
+    ">
+    <div style="
+      display: flex;
+      flex-direction:row;
+      ">
+      <div style = "
+        background-color: lightblue;
+        ">
+        div 1
+      </div>
+
+      <div style ="
+        background-color: lightpink;
+      ">
+        div 2
+      </div>
+    </div>  
+
+    <div style="
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        ">
+      <div style = "
+        background-color: lightblue;
+        width:100px
+        ">
+        100px </div>
+      
+
+      <div style ="
+        background-color: lightpink;
+        flex: 1;
+      ">
+        flex: 1 </div>
+      
+
+      <div style ="
+        background-color: lightblue;
+        flex: 2; /* flex: 2 has the width as twice as the flex 1; */
+      ">
+        flex: 2 </div>
+    </div>
+
+  <div style="
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+      justify-content:center; /* This determines how these elements are laid out horizontally*/
+
+      ">
+    <div style = "
+    background-color: lightblue;
+    width:100px
+    
+    
+    ">
+    100px </div>
+  
+
+    <div style ="
+      background-color: lightpink;
+      width: 100px;
+    ">
+      100px </div>
+  
+
+    <div style ="
+      background-color: lightblue;
+      width: 100px; /* flex: 2 has the width as twice as the flex 1; */
+    ">
+      100px</div>
+  </div>
+
+  <div style="
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+      justify-content: space-between; /* This determines how these elements are laid out horizontally*/
+      ">
+    <div style = "
+    background-color: lightblue;
+    width:100px
+    ">
+    100px </div>
+  
+
+    <div style ="
+      background-color: lightpink;
+      width: 100px;
+    ">
+      100px </div>
+  
+
+    <div style ="
+      background-color: lightblue;
+      width: 100px; /* flex: 2 has the width as twice as the flex 1; */
+    ">
+      100px</div>
+
+  </div>
+
+  <div style="
+      display: flex;
+      flex-direction: row;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+      justify-content: center; /* This determines how these elements are laid out horizontally - start is default value*/
+      align-items: center; /* this determines how these elements are aligned vertically - stretch is default value*/
+      ">
+    <div style = "
+    background-color: lightblue;
+    width:100px
+    ">
+    100px </div>
+  
+
+    <div style ="
+      background-color: lightpink;
+      width: 100px;
+    ">
+      100px </div>
+  
+
+    <div style ="
+      background-color: lightblue;
+      width: 100px; /* flex: 2 has the width as twice as the flex 1; */
+    ">
+      100px</div>
+
+  </div>
+  </body>
+</html>
